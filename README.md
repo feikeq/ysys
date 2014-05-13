@@ -1,6 +1,7 @@
 # YSYS
 
 YSYS云上元素Node.js开发框架(MVC)
+
 代码仓库地址[YSYS](http://github.com/feikeq/ysys)
 
 ## 介绍
@@ -134,11 +135,17 @@ global.CONFIG = {
   
   
 ## 就写这么多吧，写文档太累
+
   YSYS_nojs v0.1
+  
   @date 2014-05-13
+  
   Copyright 2014, FeikeWorld - http://www.fk68.net
+  
   @author feikeq
+  
   Node.js交流QQ群：12834508  
+  
   
   [提笔记](http://www.tibiji.com/?from=nodjs)
  
