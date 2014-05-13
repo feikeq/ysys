@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title><%= CONFIG.SITE_NAME %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+         <form action="/upload/gogogo" method="post" enctype="multipart/form-data">
+         <table class="table table-striped">
+            <thead>
+              <tr>
+                <th style="width:300px;"><%= datas %></th>
+                <th>游戏名</th>
+                <th>介绍</th>
+              </tr>
+            </thead>
+            <tbody>
+            
+              <tr>
+                <td>
+                  <input type="file" name="photo" onchange="previewImage(this,'tr','.preview')" />
+                </td>
+                <td><input type="text" name="answer" placeholder="字段一" size="20" /></td>
+                <td><input type="text" name="note" placeholder="字段二" size="60" /></td>
+              </tr>
+            
+              
+            </tbody>
+          </table>
+         
+          <input type="hidden" name="openid" value="ysystest" />
+           <input type="submit" id="submit" value="submit" value="批量上传图片" />
+          </button>
+
+          </form>
+        </div>
+      </div>
+      
+ 
+
+     
+
+    </div>
+  </body>
+ 
+</html>
