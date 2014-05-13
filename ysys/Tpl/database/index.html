@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+  </head>
+  <body>
+  <h1><%= datas %></h1>
+   <a href="/database/test2">1.新增数据</a>
+   <a href="/database/test1">2.查数据</a>
+   <a href="/database/test3">3.修改数据</a>
+   <a href="/">返回首页</a>
+   
+   <p>以下为演示程序的表结构</P>
+   <pre>
+   --
+-- 演示数据库的表结构 `game_cfg`
+--
+CREATE TABLE IF NOT EXISTS `game_cfg` (
+  `gid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(50) NOT NULL DEFAULT '' COMMENT '游戏名称',
+  `icon` varchar(255) DEFAULT '' COMMENT '图标',
+  `type` tinyint(1) NOT NULL DEFAULT '1' COMMENT '类型',
+  `note` varchar(255) NOT NULL DEFAULT '' COMMENT '备注',
+  `intime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '插入时间',
+  PRIMARY KEY (`gid`),
+  UNIQUE KEY `title` (`title`),
+  KEY `type` (`type`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COMMENT='游戏表';
+   </pre>
+  </body>
+</html>
