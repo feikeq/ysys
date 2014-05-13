@@ -1,160 +1,160 @@
 # YSYS
 
-YSYSäº‘ä¸Šå…ƒç´ Node.jså¼€å‘æ¡†æ¶(MVC)
+YSYSÔÆÉÏÔªËØNode.js¿ª·¢¿ò¼Ü(MVC)
 
-## ä»‹ç»
+## ½éÉÜ
 
-YSYSæ˜¯ä¸€ä¸ªå…è´¹å¼€æºçš„ï¼Œå¿«é€Ÿã€ç®€å•çš„é¢å‘å¯¹è±¡çš„è½»é‡çº§Node.jså¼€å‘æ¡†æ¶ï¼Œæ˜¯ä¸ºäº†æ•æ·WEBåº”ç”¨å¼€å‘å’Œç®€åŒ–ä¼ä¸šåº”ç”¨å¼€å‘è€Œè¯ç”Ÿçš„ã€‚
+YSYSÊÇÒ»¸öÃâ·Ñ¿ªÔ´µÄ£¬¿ìËÙ¡¢¼òµ¥µÄÃæÏò¶ÔÏóµÄÇáÁ¿¼¶Node.js¿ª·¢¿ò¼Ü£¬ÊÇÎªÁËÃô½İWEBÓ¦ÓÃ¿ª·¢ºÍ¼ò»¯ÆóÒµÓ¦ÓÃ¿ª·¢¶øµ®ÉúµÄ¡£
  
 
-## ç›®å½•ç»“æ„
+## Ä¿Â¼½á¹¹
 
- * ç›®å½•/æ–‡ä»¶	               è¯´æ˜
+ * Ä¿Â¼/ÎÄ¼ş	               ËµÃ÷
  * -----------------------------------------------------------
- * index.js	                  æ¡†æ¶å…¥å£æ–‡ä»¶(å¯é‡å‘½å)
- *   â”œâ”€â”€ Action	              æ§åˆ¶å™¨æ–‡ä»¶ç›®å½•
- *   â”œâ”€â”€ Conf	                æ¡†æ¶é…ç½®æ–‡ä»¶ç›®å½•
- *   â”œâ”€â”€ Lib	                æ¡†æ¶æ ¸å¿ƒåŸºç±»åº“ç›®å½•
- *        â””â”€â”Œâ”€â”€ Lib/index.js  æ¡†æ¶HTTPæœåŠ¡
- *          â”œâ”€â”€ Lib/router.js æ¡†æ¶è·¯ç”±
- *          â””â”€â”€ Lib/common.js å…¬ç”¨æ–¹æ³•æ¨¡å‹
- *   â”œâ”€â”€ Tpl	                æ¨¡æ¿ç›®å½•
- *   â””â”€â”€ node_modules	        æ¡†æ¶æ‰©å±•ç›®å½•(å¯è‡ªè¡Œæ·»åŠ æ–°çš„æ¨¡å—)
+ * index.js	                  ¿ò¼ÜÈë¿ÚÎÄ¼ş(¿ÉÖØÃüÃû)
+ *   ©À©¤©¤ Action	              ¿ØÖÆÆ÷ÎÄ¼şÄ¿Â¼
+ *   ©À©¤©¤ Conf	                ¿ò¼ÜÅäÖÃÎÄ¼şÄ¿Â¼
+ *   ©À©¤©¤ Lib	                ¿ò¼ÜºËĞÄ»ùÀà¿âÄ¿Â¼
+ *        ©¸©¤©°©¤©¤ Lib/index.js  ¿ò¼ÜHTTP·şÎñ
+ *          ©À©¤©¤ Lib/router.js ¿ò¼ÜÂ·ÓÉ
+ *          ©¸©¤©¤ Lib/common.js ¹«ÓÃ·½·¨Ä£ĞÍ
+ *   ©À©¤©¤ Tpl	                Ä£°åÄ¿Â¼
+ *   ©¸©¤©¤ node_modules	        ¿ò¼ÜÀ©Õ¹Ä¿Â¼(¿É×ÔĞĞÌí¼ÓĞÂµÄÄ£¿é)
  
 
 
-# URLæ¨¡å¼
+# URLÄ£Ê½
 
-æ¡†æ¶åº”ç”¨é‡‡ç”¨å•ä¸€å…¥å£æ–‡ä»¶æ¥æ‰§è¡Œï¼Œå› æ­¤ç½‘ç«™çš„æ‰€æœ‰çš„æ¨¡å—å’Œæ“ä½œéƒ½é€šè¿‡URLçš„å‚æ•°æ¥è®¿é—®å’Œæ‰§è¡Œã€‚
-è¿™æ ·ä¸€æ¥ï¼Œä¼ ç»Ÿæ–¹å¼çš„æ–‡ä»¶å…¥å£è®¿é—®ä¼šå˜æˆç”±URLçš„å‚æ•°æ¥ç»Ÿä¸€è§£æå’Œè°ƒåº¦ã€‚
+¿ò¼ÜÓ¦ÓÃ²ÉÓÃµ¥Ò»Èë¿ÚÎÄ¼şÀ´Ö´ĞĞ£¬Òò´ËÍøÕ¾µÄËùÓĞµÄÄ£¿éºÍ²Ù×÷¶¼Í¨¹ıURLµÄ²ÎÊıÀ´·ÃÎÊºÍÖ´ĞĞ¡£
+ÕâÑùÒ»À´£¬´«Í³·½Ê½µÄÎÄ¼şÈë¿Ú·ÃÎÊ»á±ä³ÉÓÉURLµÄ²ÎÊıÀ´Í³Ò»½âÎöºÍµ÷¶È¡£
 
-index.js å’Œ function index() ä¸ºé»˜è®¤å…¥å£
+index.js ºÍ function index() ÎªÄ¬ÈÏÈë¿Ú
 
-ä¾‹åœ¨ Action ç›®å½•ä¸‹æœ‰ abc.js 
-é‚£å®ƒçš„è®¿é—®åœ°å€ä¸º http://localhost/abc/ æˆ– http://localhost/abc/index
-å› ä¸ºè¿™ä¸ªåœ°å€æŒ‡å‘çš„é»˜è®¤æ–¹æ³•ä¸ºindexæ–¹æ³•
-å¦‚ä½ abc.jsé‡Œæœ‰exportsæ˜ å°„ gogogo æ–¹æ³• é‚£è¦è®¿é—®è¿™ä¸ªæ–¹æ³•åœ°å€åº”è¯¥æ˜¯
+ÀıÔÚ Action Ä¿Â¼ÏÂÓĞ abc.js 
+ÄÇËüµÄ·ÃÎÊµØÖ·Îª http://localhost/abc/ »ò http://localhost/abc/index
+ÒòÎªÕâ¸öµØÖ·Ö¸ÏòµÄÄ¬ÈÏ·½·¨Îªindex·½·¨
+ÈçÄãabc.jsÀïÓĞexportsÓ³Éä gogogo ·½·¨ ÄÇÒª·ÃÎÊÕâ¸ö·½·¨µØÖ·Ó¦¸ÃÊÇ
 http://localhost/abc/gogogo
-ä»¥æ­¤ç±»æ¨
+ÒÔ´ËÀàÍÆ
 
-ä¾‹ï¼š
+Àı£º
 function index(response, request) {
-      //indexæ–¹æ³•ï¼š
-      // ç½‘ç«™å…¥å£ http://localhost/
-      // åŒç­‰äº http://localhost/index/index
-      // æˆ– http://localhost/index/
+      //index·½·¨£º
+      // ÍøÕ¾Èë¿Ú http://localhost/
+      // Í¬µÈÓÚ http://localhost/index/index
+      // »ò http://localhost/index/
    
-    console.log("å·²æˆåŠŸè¿›å…¥'index' æ§åˆ¶å™¨çš„ 'index' æ–¹æ³• ");
-    console.log("æ¡†æ¶Conf/index.jsé…ç½®æ–‡ä»¶ï¼š");
-    console.log(CONFIG); //è¾“å‡ºé…ç½®ä¿¡æ¯åˆ°æ§åˆ¶å°
+    console.log("ÒÑ³É¹¦½øÈë'index' ¿ØÖÆÆ÷µÄ 'index' ·½·¨ ");
+    console.log("¿ò¼ÜConf/index.jsÅäÖÃÎÄ¼ş£º");
+    console.log(CONFIG); //Êä³öÅäÖÃĞÅÏ¢µ½¿ØÖÆÌ¨
     
     response.writeHead(200, {"Content-Type": "text/html"});
-    response.write('å…¥å£å…¥å£å…¥å£å…¥å£');
+    response.write('Èë¿ÚÈë¿ÚÈë¿ÚÈë¿Ú');
     response.end();
 }
-//æ˜ å°„è¿™äº›æ–¹æ³•åˆ°æ¨¡å—å¹¶é‡æ–°å‘½å
+//Ó³ÉäÕâĞ©·½·¨µ½Ä£¿é²¢ÖØĞÂÃüÃû
 exports.index = index;
 
  
-## å…¥å£æ–‡ä»¶index.js
-   ä½ å¯ä»¥é‡å‘½åæˆä½ å–œæ¬¢çš„åå­—å¦‚app.js
-   // å®šä¹‰äº‘ä¸Šå…ƒç´ YSYSæ¡†æ¶ç›®å½•
+## Èë¿ÚÎÄ¼şindex.js
+   Äã¿ÉÒÔÖØÃüÃû³ÉÄãÏ²»¶µÄÃû×ÖÈçapp.js
+   // ¶¨ÒåÔÆÉÏÔªËØYSYS¿ò¼ÜÄ¿Â¼
    var YSYS_PATH ='./ysys/';
-   // åŠ è½½å¯åŠ¨YSYSæ¡†æ¶
-   require(YSYS_PATH+'Lib').run(8888); //å¼€å¯8888ç«¯å£çš„HTTPæœåŠ¡ä¸å†™åˆ™ä¸º80ç«¯å£
+   // ¼ÓÔØÆô¶¯YSYS¿ò¼Ü
+   require(YSYS_PATH+'Lib').run(8888); //¿ªÆô8888¶Ë¿ÚµÄHTTP·şÎñ²»Ğ´ÔòÎª80¶Ë¿Ú
     
     
-## ä½¿ç”¨æ–¹æ³•
+## Ê¹ÓÃ·½·¨
 
- åœ¨æ§åˆ¶å°è¾“å…¥â€œnode indexâ€å³å¯è¿è¡Œï¼Œç„¶åè®¿é—® http://x.x.x:8888
- è¦åå°è¿è¡Œå¹¶ä¸”ä¿å­˜æ—¥ç”¨è¿™å‘½ä»¤ nohup node index 1>log.txt & 
+ ÔÚ¿ØÖÆÌ¨ÊäÈë¡°node index¡±¼´¿ÉÔËĞĞ£¬È»ºó·ÃÎÊ http://x.x.x:8888
+ ÒªºóÌ¨ÔËĞĞ²¢ÇÒ±£´æÈÕÓÃÕâÃüÁî nohup node index 1>log.txt & 
 
 
-## æ¨¡æ¿
+## Ä£°å
 
-    //æ·»åŠ æ‰€éœ€è¦çš„å…¬ç”¨æ–¹æ³•æ¨¡å—
+    //Ìí¼ÓËùĞèÒªµÄ¹«ÓÃ·½·¨Ä£¿é
     var Common = require('../Lib/common');
-    Common.Viewtpl('index/index.html',{è¦è¾“å…¥çš„å¯¹è±¡},response); // æ¨¡ç‰ˆæ”¾ç½®åœ¨Tplç›®å½•ä¸‹
-    //æˆ–ç”¨è¿™ç§å†™çš„è¿”å›ä¿¡æ¯
-    var str = Common.Viewtpl('index/index.html',users); //ä¸ä¼ responseå‚æ•°è¿‡å»
+    Common.Viewtpl('index/index.html',{ÒªÊäÈëµÄ¶ÔÏó},response); // Ä£°æ·ÅÖÃÔÚTplÄ¿Â¼ÏÂ
+    //»òÓÃÕâÖÖĞ´µÄ·µ»ØĞÅÏ¢
+    var str = Common.Viewtpl('index/index.html',users); //²»´«response²ÎÊı¹ıÈ¥
     response.writeHead(200, {"Content-Type": "text/html"});
     response.end(str);
     
-    å…·ä½“æ¨¡æ¿å˜é‡ç­‰é€»è¾‘ç»„åˆè¯·å‚è€ƒ node_modules\ejs\Readme.md å¸®åŠ©
+    ¾ßÌåÄ£°å±äÁ¿µÈÂß¼­×éºÏÇë²Î¿¼ node_modules\ejs\Readme.md °ïÖú
 
-## æ•°æ®åº“
+## Êı¾İ¿â
 
-  //æ·»åŠ æ‰€éœ€è¦çš„å…¬ç”¨æ–¹æ³•æ¨¡å—
+  //Ìí¼ÓËùĞèÒªµÄ¹«ÓÃ·½·¨Ä£¿é
   var Common = require('../Lib/common');
   Common.QuickDB($tabname,$data_arrstr,$where_str,$DESCGROUP,Callback);
-  - `$tabname`           è¡¨åï¼ˆå¿…é€‰ï¼‰
-  - `$data_arrstr`       å­—æ®µå¯¹åƒæˆ–å­—ç¬¦ï¼ˆå¯é€‰ï¼‰
-  - `$where_str`         æ¡ä»¶è¯­å¥ï¼ˆå¯é€‰ï¼‰
-  - `$DESCGROUP`         æ’åºæˆ–åˆ†ç»„æˆ–LIMITç­‰ 
-  - `Callback`           å›è°ƒæ–¹æ³•
+  - `$tabname`           ±íÃû£¨±ØÑ¡£©
+  - `$data_arrstr`       ×Ö¶Î¶ÔÏñ»ò×Ö·û£¨¿ÉÑ¡£©
+  - `$where_str`         Ìõ¼şÓï¾ä£¨¿ÉÑ¡£©
+  - `$DESCGROUP`         ÅÅĞò»ò·Ö×é»òLIMITµÈ 
+  - `Callback`           »Øµ÷·½·¨
   
 
-  // æœ‰$data_arrstr(æ•°ç»„) å’Œ      $where_str æ—¶æ˜¯æ›´æ–°æ•°æ® UPDATE æ”¹
-  //  æœ‰$data_arrstr(æ•°ç»„) æ²¡æœ‰    $where_str æ—¶æ˜¯æ’å…¥æ•°æ® INSERT å¢
-  //æ²¡æœ‰$data_arrstr(å­—ç¬¦) æœ‰æˆ–æ²¡  $where_str æ—¶æ˜¯æŸ¥è¯¢æ•°æ® SELECT æŸ¥æˆ– count ç»Ÿè®¡
+  // ÓĞ$data_arrstr(Êı×é) ºÍ      $where_str Ê±ÊÇ¸üĞÂÊı¾İ UPDATE ¸Ä
+  //  ÓĞ$data_arrstr(Êı×é) Ã»ÓĞ    $where_str Ê±ÊÇ²åÈëÊı¾İ INSERT Ôö
+  //Ã»ÓĞ$data_arrstr(×Ö·û) ÓĞ»òÃ»  $where_str Ê±ÊÇ²éÑ¯Êı¾İ SELECT ²é»ò count Í³¼Æ
   
   
-  ä¾‹ï¼š
-  //æ˜ å°„test1æ–¹æ³•
+  Àı£º
+  //Ó³Éätest1·½·¨
 exports.test1 =function(response, request) {
-    console.log("\n\n\n\nå·²æˆåŠŸè¿›å…¥'database' æ§åˆ¶å™¨çš„ 'test1 æ–¹æ³• ");
-    console.log("æŸ¥è¯¢æ•°æ®åº“");
-     ret = Common.QuickDB('game_cfg','*',"`title`='åˆ‡æ°´æœ'",'ORDER BY  `gid` DESC',function(data){
-          console.log(data);//è¾“å‡ºç»“æœåˆ°æ§åˆ¶å°
+    console.log("\n\n\n\nÒÑ³É¹¦½øÈë'database' ¿ØÖÆÆ÷µÄ 'test1 ·½·¨ ");
+    console.log("²éÑ¯Êı¾İ¿â");
+     ret = Common.QuickDB('game_cfg','*',"`title`='ÇĞË®¹û'",'ORDER BY  `gid` DESC',function(data){
+          console.log(data);//Êä³ö½á¹ûµ½¿ØÖÆÌ¨
           response.writeHead(200, {"Content-Type": "text/plain"});
-          response.end('å› ä¸ºæ²¡åšåˆ«çš„å¤„ç†ï¼Œå»æ§åˆ¶å°consoleçœ‹ç»“æœå§'); 
+          response.end('ÒòÎªÃ»×ö±ğµÄ´¦Àí£¬È¥¿ØÖÆÌ¨console¿´½á¹û°É'); 
      });
 }
 
 
-## é…ç½®æ–‡ä»¶
-æ–‡ä»¶åœ¨æ¡†æ¶ç›®å½•ä¸‹çš„Conf/index.jsæ–‡ä»¶é‡Œï¼Œä¸ç”¨å¤šè¯´ä»€ä¹ˆä½ çœ‹å¾—æ‡‚çš„ï¼Œå‘µã€‚
+## ÅäÖÃÎÄ¼ş
+ÎÄ¼şÔÚ¿ò¼ÜÄ¿Â¼ÏÂµÄConf/index.jsÎÄ¼şÀï£¬²»ÓÃ¶àËµÊ²Ã´Äã¿´µÃ¶®µÄ£¬ºÇ¡£
 
 global.CONFIG = {
-  //æœåŠ¡å™¨ç›¸å…³é…ç½®å¯è‡ªè¡Œæ·»åŠ 
-  'SITE_NAME':'YSYSäº‘ä¸Šå…ƒç´ Node.jsæœåŠ¡å™¨æ¡†æ¶',
-  'COOKIE_DOMIN' : '127.0.0.1', //cookieåŸŸ
-  'SITE_UPLOADS' : 'uploads/', //ä¸Šä¼ æ–‡ä»¶åœ°å€
-  //MySqlæ•°æ®åº“é…ç½®
+  //·şÎñÆ÷Ïà¹ØÅäÖÃ¿É×ÔĞĞÌí¼Ó
+  'SITE_NAME':'YSYSÔÆÉÏÔªËØNode.js·şÎñÆ÷¿ò¼Ü',
+  'COOKIE_DOMIN' : '127.0.0.1', //cookieÓò
+  'SITE_UPLOADS' : 'uploads/', //ÉÏ´«ÎÄ¼şµØÖ·
+  //MySqlÊı¾İ¿âÅäÖÃ
   MYSQL : {
       host: 'localhost',
       port: '3306',
       user: 'root',
       password: 'root',
-      database: 'test', //åº“å
+      database: 'test', //¿âÃû
       dateStrings: false
   }
 };
   
   
-## å°±å†™è¿™ä¹ˆå¤šå§ï¼Œå†™æ–‡æ¡£å¤ªç´¯
+## ¾ÍĞ´ÕâÃ´¶à°É£¬Ğ´ÎÄµµÌ«ÀÛ
   YSYS_nojs v0.1
   @date 2014-05-13
   Copyright 2014, FeikeWorld - http://www.fk68.net
   @author feikeq
-  [æç¬”è®°](http://www.tibiji.com/?from=nodjs)
+  [Ìá±Ê¼Ç](http://www.tibiji.com/?from=nodjs)
  
  
-## å…¶å®ƒå¸®åŠ©
+## ÆäËü°ïÖú
 
-é€šè¿‡ Apache ä»£ç†è®¿é—® Nodeï¼š
+Í¨¹ı Apache ´úÀí·ÃÎÊ Node£º
 -----------------------------------------------------------------
-é’ˆå¯¹æœåŠ¡å™¨ä¸Šå·²ç»æœ‰äº† apache å’Œ Node åŒæ—¶æƒ³æŠŠåŸŸåçš„ 80 ç«¯å£ç»™ Node ä½¿ç”¨åšåˆ°ä¸¤è€…å…¼é¡¾ ã€‚
-åŸç†å°±æ˜¯ä½¿ç”¨ Apache åšä»£ç†æœåŠ¡å™¨ï¼Œä¹Ÿå°±æ˜¯ä½¿ Node å’Œ Apache åœ¨ä¸€ä¸ªæœåŠ¡å™¨ä¸ŠåŒæ—¶æä¾›æœåŠ¡ï¼Œå¹¶ä¸”éƒ½åªä½¿ç”¨åŸŸåè€Œä¸ç”¨åŠ ç«¯å£å·:
+Õë¶Ô·şÎñÆ÷ÉÏÒÑ¾­ÓĞÁË apache ºÍ Node Í¬Ê±Ïë°ÑÓòÃûµÄ 80 ¶Ë¿Ú¸ø Node Ê¹ÓÃ×öµ½Á½Õß¼æ¹Ë ¡£
+Ô­Àí¾ÍÊÇÊ¹ÓÃ Apache ×ö´úÀí·şÎñÆ÷£¬Ò²¾ÍÊÇÊ¹ Node ºÍ Apache ÔÚÒ»¸ö·şÎñÆ÷ÉÏÍ¬Ê±Ìá¹©·şÎñ£¬²¢ÇÒ¶¼Ö»Ê¹ÓÃÓòÃû¶ø²»ÓÃ¼Ó¶Ë¿ÚºÅ:
 
-é‚£ä¹ˆå°±æ¥çœ‹ï¼Œå¦‚ä½•å®ç°ï¼š
+ÄÇÃ´¾ÍÀ´¿´£¬ÈçºÎÊµÏÖ£º
 
-1.åœ¨ Apache çš„é…ç½®conf/httpd.confæ–‡ä»¶ä¸­ï¼Œå¼€å¯ mod_proxy å’Œ mod_proxy_http è¿™ä¸¤ä¸ªæ¨¡å—ï¼š
+1.ÔÚ Apache µÄÅäÖÃconf/httpd.confÎÄ¼şÖĞ£¬¿ªÆô mod_proxy ºÍ mod_proxy_http ÕâÁ½¸öÄ£¿é£º
 #LoadModule proxy_module modules/mod_proxy.so
 #LoadModule proxy_http_module modules/mod_proxy_http.so
-ä¹Ÿå°±æ˜¯å»æ‰è¿™ä¸¤è¡Œå‰é¢çš„ # å·å³å¯ã€‚(å¦‚æœè¿™äº›æ¨¡å—å·²ç»å†…ç½®äº†å°±ä¸ç”¨æ‰‹åŠ¨åŠ è½½)
+Ò²¾ÍÊÇÈ¥µôÕâÁ½ĞĞÇ°ÃæµÄ # ºÅ¼´¿É¡£(Èç¹ûÕâĞ©Ä£¿éÒÑ¾­ÄÚÖÃÁË¾Í²»ÓÃÊÖ¶¯¼ÓÔØ)
 
-2.é…ç½®è™šæ‹Ÿä¸»æœºï¼Œconf/vhosts.confæ–‡ä»¶é‡Œå¢åŠ ä¸‹é¢çš„ä»£ç ï¼š
+2.ÅäÖÃĞéÄâÖ÷»ú£¬conf/vhosts.confÎÄ¼şÀïÔö¼ÓÏÂÃæµÄ´úÂë£º
 <VirtualHost *:80>
    ServerName node.js
    ServerAlias www.node.js
@@ -171,12 +171,12 @@ global.CONFIG = {
   </Location>
 </VirtualHost>
 
-æ³¨æ„ï¼š
-    æ­¤å¤„ node.js å’Œ www.node.js ä¸ºç»‘å®šçš„è¦è®¿é—® Node æœåŠ¡çš„åŸŸåã€‚
-    ç¬¬ä¸€è¡Œçš„<VirtualHost *:80>ä¸­çš„*å·å¦‚ä¸ç®¡ç”¨å°±å¡«æœåŠ¡å™¨çš„IPåœ°å€ã€‚(æˆ‘ç”¨çš„æ˜¯IPåœ°å€)
-    http://localhost:8888/ ä¸ºæœåŠ¡å™¨ä¸Šè®¿é—® Node çš„ç½‘å€å’Œç«¯å£å·ï¼Œè¿™é‡Œä»¥ 8888 ä¸ºä¾‹ã€‚
+×¢Òâ£º
+    ´Ë´¦ node.js ºÍ www.node.js Îª°ó¶¨µÄÒª·ÃÎÊ Node ·şÎñµÄÓòÃû¡£
+    µÚÒ»ĞĞµÄ<VirtualHost *:80>ÖĞµÄ*ºÅÈç²»¹ÜÓÃ¾ÍÌî·şÎñÆ÷µÄIPµØÖ·¡£(ÎÒÓÃµÄÊÇIPµØÖ·)
+    http://localhost:8888/ Îª·şÎñÆ÷ÉÏ·ÃÎÊ Node µÄÍøÖ·ºÍ¶Ë¿ÚºÅ£¬ÕâÀïÒÔ 8888 ÎªÀı¡£
 
-2.è¿è¡Œä½ çš„ Node æœåŠ¡ï¼Œç„¶åé‡å¯ Apache ï¼Œè®¿é—®ä½ çš„åŸŸåè¿™æ—¶å€™ä½ å°±å¯ä»¥çœ‹åˆ°ç”¨ Node æä¾›æœåŠ¡çš„ç½‘ç«™äº†ã€‚
+2.ÔËĞĞÄãµÄ Node ·şÎñ£¬È»ºóÖØÆô Apache £¬·ÃÎÊÄãµÄÓòÃûÕâÊ±ºòÄã¾Í¿ÉÒÔ¿´µ½ÓÃ Node Ìá¹©·şÎñµÄÍøÕ¾ÁË¡£
 
-(å¤‡æ³¨ï¼šå¦‚æœä½¿ç”¨çš„æ˜¯ Nignx çš„è¯ï¼Œä¹Ÿå¯ä»¥ç”¨åŒæ ·çš„åŸç†æ¥å®ç°ï¼Œä½†æ˜¯æˆ‘åªç”¨äº† Apache ï¼Œå°±æ²¡æœ‰å°è¯•ç€å»åš Nignxã€‚å½“ç„¶äº†ï¼Œå…¶ä»–æœåŠ¡å™¨ä¹Ÿä¸€æ ·ã€‚)
+(±¸×¢£ºÈç¹ûÊ¹ÓÃµÄÊÇ Nignx µÄ»°£¬Ò²¿ÉÒÔÓÃÍ¬ÑùµÄÔ­ÀíÀ´ÊµÏÖ£¬µ«ÊÇÎÒÖ»ÓÃÁË Apache £¬¾ÍÃ»ÓĞ³¢ÊÔ×ÅÈ¥×ö Nignx¡£µ±È»ÁË£¬ÆäËû·şÎñÆ÷Ò²Ò»Ñù¡£)
 
