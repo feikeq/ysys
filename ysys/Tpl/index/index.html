@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="user-scalable=0, initial-scale=1.0">
+<meta charset="utf-8">
+<title><%= CONFIG.SITE_NAME %></title>
+</head>
+<body>
+
+<!-- 引入头部模版文件 -->
+<% include head.htm %>
+
+ 
+这是一个测试页面：
+
+
+<h2>模块公共变量为datas</h2>
+现在它的长度为：<%= datas.length %> <br/>
+内容为：<br/>
+<div style="border:1px solid red;">
+
+<% if (typeof datas  === 'object') { %>
+  <br/>datas这是一个对像：<br/>
+  <ul>
+    <% datas.forEach(function(k){ %>
+      <li title='<%= k.name + "_" %>'>
+          <a href="<%= k.url %>"><%= k.name + "：" +  k.file  %> [[运算：<%= k.name | k.file | k.url %> ]]</a>
+          
+          </li>
+    <% }) %>
+  </ul>
+<% }else{ %>
+      <br/>不是对像直接输出字符：<br/>
+      <%= datas %>
+<% } %>
+
+</div>
+ 
+<!-- 引入尾模版文件 -->
+<% include footer.htm %>
+</body>
+</html>
